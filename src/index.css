@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #07040a;
+  color: #f5f3ff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  @keyframes riseFade {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -70%) scale(0.85);
+    }
+    15% {
+      opacity: 1;
+      transform: translate(-50%, -100%) scale(1.05);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -160%) scale(0.95);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.4));
+    }
+    50% {
+      filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.7));
+    }
+  }
+
+  .animate-rise-fade {
+    animation: riseFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+}

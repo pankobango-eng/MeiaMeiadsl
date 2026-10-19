@@ -1,0 +1,6 @@
+{
+  "name": "Sole Reflex: 2D Foot Target Reflex Game",
+  "description": "Fast-paced reflex game testing speed and precision across 12 anatomical foot sole targets with responsive touch, mouse, and keyboard controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
